@@ -1,5 +1,9 @@
 def main():
     print(insertion_sort([2, 3, 1, 65, 2, 1, 9, 7, 3, 4]))
+    print(insertion_sort([2, 3]))
+    print(insertion_sort([2]))
+    print(insertion_sort([]))
+
     print(insertion_sort(
         [2, 3, 1, 65, 2, 1, 9, 7, 3, 4, -12, -12, 0, -121212]))
 
