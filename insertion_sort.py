@@ -7,7 +7,7 @@ def insertion_sort(data):
         return data
     for i in range(1, len(data)):
         for j in range(i):
-            if data[i] < data[j]:
+            if data[i] > data[j]:
                 data[i], data[j] = data[j], data[i]
     return data
 
