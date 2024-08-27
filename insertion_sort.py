@@ -5,6 +5,7 @@ def main():
 
 
 def insertion_sort(data):
+    # If data is empty or data has only 1 element, its already sorted
     if not data or len(data) == 1:
         return data
     for i in range(1, len(data)):
