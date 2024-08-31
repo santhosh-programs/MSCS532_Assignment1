@@ -9,13 +9,16 @@ def main():
 
 
 def insertion_sort(data):
-    # If data is empty or data has only 1 element, its already sorted
+    # If data is empty or data has only 1 element, it's already sorted
     if not data or len(data) == 1:
         return data
     for i in range(1, len(data)):
-        for j in range(i):
-            if data[i] > data[j]:
-                data[i], data[j] = data[j], data[i]
+        key = data[i]
+        for j in range(i - 1, -1, -1):
+            if key < data[j]:
+                break
+            elif key > data[j]:
+                data[j], data[j + 1] = key, data[j]
     return data
 
 
